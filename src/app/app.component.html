@@ -1,0 +1,13 @@
+<h1>
+  <h1>{{title}}</h1>
+</h1>
+<nav>
+  <ul>
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li><a [routerLink]="['/directory']">Directory</a></li>
+  </ul>
+</nav>
+<section id="main">
+  <!--<app-home [customData]="someData" (onYell)="yell($event)">App Home</app-home>-->
+  <router-outlet></router-outlet>
+</section>
